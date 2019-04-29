@@ -1,0 +1,15 @@
+#title {
+  padding-left: 80px;
+}
+
+table {
+  border: 1px solid black;
+  width: 250px;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  height: 80px;
+  padding-left: 20px;
+}
