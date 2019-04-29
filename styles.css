@@ -6,10 +6,20 @@ table {
   border: 1px solid black;
   width: 250px;
   border-collapse: collapse;
+  border-radius: 10px;
 }
 
 td {
   border: 1px solid black;
   height: 80px;
   padding-left: 20px;
+}
+
+.search-field {
+  width: 200px;
+  padding-left: 10px;
+}
+
+form {
+  padding-bottom: 15px;
 }
