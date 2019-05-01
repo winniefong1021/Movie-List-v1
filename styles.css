@@ -7,27 +7,33 @@
 }
 
 table {
-  border: 1px solid black;
+  border: 1px solid #dfdfdf;
   width: 250px;
   border-collapse: collapse;
   border-radius: 10px;
 }
 
 td {
-  border: 1px solid black;
+  border: 1px solid #dfdfdf;
   height: 80px;
   padding-left: 20px;
 }
 
-.search-field {
+.search-field, .add-field {
   width: 200px;
-  padding-left: 10px;
+  padding-left: 6px;
 }
 
 form {
   padding-bottom: 15px;
 }
 
-.search-button:hover {
+.search-button:hover, .add-button:hover {
   cursor: pointer;
+}
+
+.add-button {
+  background-color: green;
+  color: white;
+  border-radius: 3px;
 }

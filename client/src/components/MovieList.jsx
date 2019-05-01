@@ -7,7 +7,7 @@ var count = 0;
 var MovieList = (props) => (
   <table>
     <tbody>
-      {props.movies.movies.map(movie => <Movie movie={movie} key={count++} />)}
+      {props.movies.map(movie => <Movie movie={movie} key={count++} />)}
     </tbody>
   </table>
 );
