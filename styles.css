@@ -1,5 +1,9 @@
+#app {
+  padding-left: 50px;
+}
+
 #title {
-  padding-left: 80px;
+  padding-left: 95px;
 }
 
 table {
@@ -22,4 +26,8 @@ td {
 
 form {
   padding-bottom: 15px;
+}
+
+.search-button:hover {
+  cursor: pointer;
 }
