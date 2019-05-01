@@ -4,6 +4,7 @@ import { movies } from '../../data/exampleData.js';
 import MovieList from './MovieList.jsx';
 import Search from './Search.jsx';
 import AddMovie from './AddMovie.jsx';
+import Watched from './Watched.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class App extends React.Component {
     this.state = ({
       searchInput: '',
       addMovie: '',
+      toggleStatus: false,
       movieList: movies,
     });
 
@@ -72,6 +74,7 @@ class App extends React.Component {
 
     // fix issue of not having added movies come back after refresh
     // once submitted, clear out input in form
+    // Display only user added movies, not the hardcoded data.
 
     console.log('add movie submitted: ', input);
   }
@@ -81,6 +84,7 @@ class App extends React.Component {
       <div>
         <AddMovie handleMovieInput={this.handleMovieInput} handleAddMovie={this.handleAddMovie} />
         <Search handleSearchInput={this.handleSearchInput} handleSearchSubmit={this.handleSearchSubmit} />
+        <Watched />
         <div className="movie-list">
           <MovieList movies={this.state.movieList} />
         </div>

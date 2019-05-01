@@ -28,7 +28,7 @@ form {
   padding-bottom: 15px;
 }
 
-.search-button:hover, .add-button:hover {
+.search-button:hover, .add-button:hover, button {
   cursor: pointer;
 }
 
@@ -37,3 +37,4 @@ form {
   color: white;
   border-radius: 3px;
 }
+
